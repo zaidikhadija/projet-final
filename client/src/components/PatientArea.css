@@ -39,7 +39,7 @@ label, .description {
 }
 
 form {
-  width: 31.25rem;
+  width: 25.25rem;
   margin-top: 2rem;
   padding: 1rem 0;
 }
@@ -112,8 +112,8 @@ button:active {
 .client-signin{
     
   padding: 30px 20px;
-  height: 550px;
-  width: 370px;
+  height: 250px;
+  width: 270px;
   
 
 }

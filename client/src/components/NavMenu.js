@@ -9,8 +9,6 @@ import "./Nav.css";
 
 const NavMenu = () =>{
 const isAuth = useSelector((state) => state.authReducer.isAuth);
-// const user = useSelector((state) => state.authReducer.user);
-
 const dispatch = useDispatch();
 const logoutUser = () => {
   dispatch(logout());
@@ -31,7 +29,11 @@ const authLinks = (
           <Link to="/medicalFile" ><li><a href="/medicalFile"> </a></li> </Link>
           <Link to="/Dashboard_patient">
           <li><a href="/Dashboard_patient"> </a></li></Link>
-          {/* <Link to="/medicalFile" ><li><a href="/medicaleFile"> </a></li> </Link> */} 
+          <Link to="/RendezVous" ><li><a href="/RendezVous">Rendez-vous</a></li> </Link> 
+          <Link to="/BookAppointment">
+          <li><a></a></li>
+          </Link>
+          <Link to="/ListRendezVous" ><li><a href="/ListRendezVous"></a></li> </Link> 
          
           </div>
     </nav>
@@ -54,9 +56,7 @@ const authLinks = (
           <Link to="/doctors">
           <li><a>Are you doctor?</a></li>
           </Link>
-          {/* <Link to="/Information">
-          <li><a>Informations</a></li>
-          </Link> */}
+         
         </ul>
       </div>
     </nav>
@@ -72,23 +72,6 @@ const authLinks = (
     <nav className="nav">
    
     <div className="container">
-    
-      {/* <h1 className="logo"><a href="/">Covid-Care.tn</a></h1>
-      
-      <ul>
-     
-      <Link to="/">
-        <li><a className="current">About us</a></li>
-        </Link>
-        <li><a href="/services">Ours Services</a></li>
-        <Link to="/patient">
-        <li><a >Are you patient?</a></li>
-        </Link>
-        <Link to="/doctors">
-        <li><a>Are you doctor?</a></li>
-        </Link>
-      </ul>
-    </div> */}
       {isAuth ? authLinks : guestLinks}
       </div>
    

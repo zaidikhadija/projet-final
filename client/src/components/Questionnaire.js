@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {useDispatch} from "react-redux";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 import {
   Card, CardImg,  CardBody,Input,FormGroup,Label,Form,
   CardTitle, CardSubtitle, Button
@@ -11,7 +11,7 @@ import "./Questionnaire.css";
 
 const AddMedicalFile = () => {
     const [weight,setWeight]=useState("")
-    const [ medicalHistory,setMedicalHistory]=useState("")
+    const [medicalHistory,setMedicalHistory]=useState("")
     const [allergiesName,setAllergiesName]=useState("")
     const [bloodType,setBloodType]=useState("")
     const dispatch=useDispatch();

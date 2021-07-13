@@ -103,6 +103,7 @@ import { Card,CardTitle, CardText,Button } from 'reactstrap';
        </div>
    )
     }
+    
 
  export default CardPatient;
 //https://intouchhealth.com/wp-content/uploads/2019/02/telemedicine.jpg

@@ -10,20 +10,10 @@ import EditModalQuest from "./EditModalQuest";
 
 
 const CardPatient = ({medicalFile}) => {
-//   const user = useSelector((state) => state.authReducer.user);
-// const medicalfile = useSelector(state=> state.medicalFileReducer.medicalfile)
-    // const dispatch=useDispatch()
-    // const history = useHistory();
-    // history.push("/Dashboard_patient");
-   
-    // const delet=(_id,userId)=>{
-    //    console.log("id",id)
-    //     dispatch(deletemedicalFile(_id,userId))
-        
-    //  }
-    
     const dispatch=useDispatch()
     const delett=(id)=>{
+
+      
         dispatch(deletemedicalFile(id))
 
     }

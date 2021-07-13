@@ -100,7 +100,7 @@ export const createFile = (newFile) => async (dispatch) => {
         }
     }
       const res = await axios.delete("http://localhost:5000/api/medicalFile/deletemedicalFile/"+medicalFileId ,config);
-      console.log("resOne",res)
+      // console.log("resOne",res)
       console.log("idDelete",medicalFileId)
     
       dispatch({

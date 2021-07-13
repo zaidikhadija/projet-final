@@ -12,7 +12,9 @@ import Footer from "./components/Footer";
 import Dashboard_patient  from './components/Dashboard_patient';
 import Questionnaire from "./components/Questionnaire";
 import MedicalFilll from './components/auth/medicalFile';
-
+import RendezVous from './components/RendezVous';
+import BookAppointment from './components/BookAppointment';
+import ListRendezVous from './components/ListRendezVous';
 
 function App() {
   
@@ -22,16 +24,20 @@ function App() {
     <div className="App">
 <NavMenu/>
   <Switch>
+ 
          <Route path="/Dashboard_patient" component={ Dashboard_patient} />  
-          <Route path="/medicalFile" component={ MedicalFilll} />  
+          <Route path="/medicalFile" component={ MedicalFilll}  />  
           <Route path="/Questionnaire" component={ Questionnaire} />  
-          <Route path="/Files" component={ Files} />  
+          <Route path="/Files" component={ Files} /> 
+          <Route path="/RendezVous" component={RendezVous} />  
+          <Route path="/ListRendezVous" component={ListRendezVous} /> 
+          
           <Route exact path="/" component={Homepage} />
           <Route path="/patient"  component={PatientArea} />
           <Route path="/doctors" component={DoctorArea} />
           <Route path="/services" component={OurServices} />
          
-         {/* <Route path="/Information" component={Information} /> */}
+         <Route path="/BookAppointment" component={BookAppointment} />
 
          <Footer/>
          

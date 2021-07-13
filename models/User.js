@@ -33,6 +33,10 @@ MedicalFiles:[{
     type:mongoose.Schema.Types.ObjectId,
     ref: "MedicalFile"
 }],
+Appointments:[{
+  type:mongoose.Schema.Types.ObjectId,
+  ref: "Appointment"
+}],
 });
 
 module.exports = User = mongoose.model('User', userSchema);

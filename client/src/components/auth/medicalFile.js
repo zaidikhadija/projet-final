@@ -24,7 +24,8 @@ const CardMedicalFile = () => {
     //     dispatch(deletemedicalFile(medicalfile._id))
     // }
     return (
-        <div >
+      <div>
+      <div class="contact-container">
             <Card body>
           <CardTitle tag="h5">{medicalfile.weight}</CardTitle>
           <CardText>{medicalfile.medicalHistory}</CardText>
@@ -36,6 +37,7 @@ const CardMedicalFile = () => {
             
           </div>
         </Card>
+        </div>
         </div>
     )
 }

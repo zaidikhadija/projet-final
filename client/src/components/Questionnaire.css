@@ -1,6 +1,6 @@
 .contact-container{
     margin-top: 7rem;
-    /* display: flex; */
+    display: flex;
     height: 100vh;
   }
   /* .right-col {
@@ -72,11 +72,11 @@
   }
   Button {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     background: white;
-    color: yellow;
-    width: 10rem;
-    height: 2.25rem;
+    color:black;
+    width: 15rem;
+    height: 2.4rem;
     border: none;
     border-radius: 2px;
     outline: none;
@@ -106,7 +106,8 @@
         margin-left: 0.4rem;
     }
     Button {
-        width: 7rem;
+        width: 10rem;
+        height: 15rem;
     }
   }
   .Questionnaire{
@@ -121,8 +122,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    height: 300vh;
+    height: 200vh;
     padding: 5rem 0;
     margin-left: auto;
     margin-right: auto;
   }
+  .appointment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /* height: 200vh;
+    padding: 5rem 0;
+    margin-left: auto;
+    margin-right: auto; */
+
+  }
+  /* .imgvideo{
+    width:20px;
+     height:240px;
+  } */
+  /* .Card{
+    height:300px;
+    width: 600;
+  } */

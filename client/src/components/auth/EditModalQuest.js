@@ -27,12 +27,6 @@ const EditMedicalFile = ({medicalFile}) => {
     dispatch(editmedicalFile(medicalFile._id,{ weight, medicalHistory, allergiesName, bloodType}))
     toggle()
   }
-//   setWeight('');
-//   setMedicalHistory('');
-//   setAllergiesName('');
-//   setBloodType('');
-  
-
   return (
     <div className="container">
     <div class="contact-container">
@@ -109,7 +103,7 @@ const EditMedicalFile = ({medicalFile}) => {
 
 
 export default EditMedicalFile;
- {/* <div>
+ /* <div>
       <Card className="Questionnaire">
       <CardImg top width="30%" src="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-medical-supplies-medical-record-image_1456372.jpg"  alt="imgdossie" />
       <CardBody>
@@ -123,7 +117,7 @@ export default EditMedicalFile;
       </div>
      </div></div>
    
-      // </div> */}
+      // </div> */
   
 
 

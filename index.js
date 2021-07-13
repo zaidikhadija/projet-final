@@ -9,6 +9,7 @@ const cors=require("cors")
 
 const authRouter= require('./routes/api/auth');
 const medicalFileRouter=require('./routes/api/medicalFile');
+const appointmentRouter=require('./routes/api/appointment');
 
 
 // Init express
@@ -27,7 +28,7 @@ connectDB();
 //app.use('/api/auth', authRouter);
 app.use('/api/auth',authRouter)
 app.use('/api/medicalFile',medicalFileRouter)
-// app.use('/api/authDoctor',authDoctor);
+app.use('/api/appointment',appointmentRouter);
 // app.use('/api/ProfileDoctor',ProfileDoctor);
 
 // Create port
