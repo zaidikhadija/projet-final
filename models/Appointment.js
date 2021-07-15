@@ -18,25 +18,7 @@ const AppointmentSchema = new Schema({
                 type: String,
                 required: true
             },
-            // heure: {
-            //     type: String,
-            // },
-            // status: {
-            //     type: String,
-            // },
-            // age: {
-            //     type: Number,
-            // },
-            // date: {
-            //     type: Date,
-            // },
-            // description: {
-            //     type: String,
-            //     required: true
-            // },
-            // name: {
-            //     type: String
-            // },
+           
             time : {type: Date, default: (new Date().getTime()) },
             // time :{   type: Number,
             //     enum: [09, 10, 11,12,14,15,16,17,18],
